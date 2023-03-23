@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* background-color: rgb(0, 255, 204); */
+  /* background-image: url(assets/image/igap.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
+  /* padding: 40px; */
+  background: transparent;
+  text-align: center;
+  height: 150PX;
+
+  
+}
+.toplogo IMG{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  border-radius:10px 30px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  /* margin: 20px 290px; */
+  text-align: center;
+  border-radius: 20px;
+  z-index: 20;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  
+}
+
+nav li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  color: rgb(56, 53, 53);
+  font-size: 20px;
+}
+
+nav li:hover {
+  background-color: rgb(231, 74, 74);  
+}
+nav li a:hover{
+  color: white;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  margin: 10px 0;
+  z-index: 1;
+  min-width: 150px;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a{
+  display: block;
+  padding: 12px 16px;
+  
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: #f5f5f5;
+  color: black;
+}
+
+section {
+  /* background-image: url(/assets/images/backgro.jpeg); */
+  display: flex;
+  background-size: cover;
+}
+
+.aboutleft {
+  flex: 6;
+  padding: 10px;
+  
+}
+
+/* .aboutleft img:hover {
+  width: 100%;
+  height: 310px;
+} */
+
+section .head {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+section .aboutinfo {
+  
+  background:rgba(239, 182, 106,0.8);
+  border: 1px solid;
+  height: 260px;
+  border-radius: 10px 50px;
+  text-align: justify;
+  margin: auto;
+  padding: 20px;
+  box-shadow:  4px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aboutright {
+  /* background-color: rgb(239, 182, 106); */
+  flex: 8;
+  
+}
+
+.aboutright p {
+  text-indent: 40px;
+  text-shadow: 0 0 5px white;
+}
+
+/* article{
+    background-color: rgb(232, 255, 250);
+    border: 1px solid;
+  } */
+
+.package {
+  display: flex;
+}
+
+.head h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  background-color: darkgray;
+  word-spacing: 7PX;
+  padding: 15px 10px;
+  margin: 10px 450px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(52, 48, 48, 0.2), 3px 3px 8px rgb(0, 0, 0,0.2);
+}
+
+article img,
+aside img {
+  border-radius: 10px ;
+}
+
+article a,
+aside a {
+  background-color: rgb(179, 24, 7);
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 6px 8px;
+  /* border: 2px solid red; */
+  color: rgb(255, 251, 251);
+  font-size: 20px;
+}
+
+article a:hover,
+aside a:hover {
+  background-color: rgb(0, 102, 10);
+  padding: 10px 12px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  text-align: center;
+  flex: 2;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 30px 60px;
+  padding: 20px 10px;
+  box-shadow:  4px 8px 8px rgba(0, 0, 0, 0.2);
+  transition: 1s;
+}
+
+
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  background-color: rgb(255, 242, 210);
+  transform: scale(1.1);
+  z-index: 2;
+  cursor: default;
+}
+.package{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),-2px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* #box1:hover,
+#box2:hover,
+#box3:hover,
+#box4:hover {
+  background-color: rgb(255, 242, 210);
+  padding: 21px 11px;
+  cursor: default;
+} */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  align-items: center;
+  background-color: rgb(81, 77, 77);
+  border: 3px solid rgb(176, 34, 34);
+  margin: 0;
+}
+footer li img {
+  width: 40px;
+}
+
+footer li {
+  display: inline;
+}
+
+footer li a {
+  padding-left: 30px;
+}
+
+@media (max-width: 800px){
+  section,
+  article,
+  aside,
+  footer {
+    flex-direction: column;
+  }
+  li {
+    display: block;
+  }
+  .package,.aboutright{
+    flex-direction: column;
+  }
+  nav{
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+  }
+  .head h2{
+    width: 50%;
+    margin: auto;
+  } 
+  
+}
+
